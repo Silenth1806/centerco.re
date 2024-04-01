@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: monospace;
+    background-color: black;
+    color: white;
+}
+
+#bg {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.85) 100%);
+    background-repeat: repeat;
+    background-size: 250px;
+    background-position: 0 0;
+    animation: animatedBackground 140s linear infinite;
+}
+
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+  /*use negative width if you want it to flow right to left else and positive for left to right*/
+    to {
+      background-position: -10000px -10000px;
+    }
+  }
+
+.container {
+    margin-left: 30px;
+}
+
+.directory a {
+    color: rgb(90, 0, 112);
+    font-size: 17px;
+}
+
+.directory .links tr, th {
+    padding: 10px;
+}
+
+.directory .links tr, th, table {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+.links a {
+    color: rgb(112, 0, 0);
+    font-size: 17px;
+}
