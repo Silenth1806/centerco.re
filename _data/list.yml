@@ -1,0 +1,11 @@
+docs_list_title: directory
+
+pages:
+- title: home
+  url: index.html
+
+- title: projects
+  url: projects.html
+
+- title: void
+  url: void.html

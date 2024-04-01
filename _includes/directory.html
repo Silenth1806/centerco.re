@@ -5,14 +5,10 @@
                 <span style="font-size: large;">directory</span>
             </th>
         </tr>
-        <th>
-            <span>* </span><a href="./index.html">home</a>
-        </th>
-        <th>
-            <a href="./projects.html">projects</a>
-        </th>   
-        <th>
-            <a href="./void.html">void</a>
-        </th>
+            {% for item in site.data.list.pages %}
+                <th>
+                    <a href="{{ item.url }}">{{ item.title }}</a>
+                </th>
+            {% endfor %}
     </tr>
 </table>
