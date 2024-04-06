@@ -5,14 +5,11 @@
         </th>
     </tr>
     <tr>
-        <th>
-            <a href="https://github.com/Silenth1806">gh</a>
-        </th>
-        <th>
-            <a href="https://twitter.com/Silenth1806">twitter</a>
-        </th>
-        <th>
-            <a href="https://steamcommunity.com/id/dollarstorebong/">steam</a>
-        </th>
+
+            {% for item in site.data.list.links %}
+                <th>
+                    <a href="{{ item.url }}">{{ item.title }}</a>
+                </th>
+            {% endfor %}
     </tr>
 </table>

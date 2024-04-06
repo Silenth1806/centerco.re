@@ -20,6 +20,23 @@ body {
     animation: animatedBackground 140s linear infinite;
 }
 
+#nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#nav table {
+  margin-left: 20px;
+  display: flex;
+}
+
+.project-text {
+  font-size: larger;
+  max-width: 50vw;
+}
+
+
 @keyframes animatedBackground {
     from {
       background-position: 0 0;

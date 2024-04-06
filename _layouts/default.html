@@ -9,20 +9,18 @@ title: "me"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <meta name="description" content="" />
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8" />
     <title>me</title>
     <link rel="icon" href="favicon.png">
 </head>
 <div id="bg"></div>
 <body>
-    <h1>centerco.re</h1>
-
-
-    {% include directory.html %}
-    <br>
-    {% include links.html %}
-    <br>
+    <div id="nav">
+        <h1>centerco.re <br>/ {{ page.title }}</h1>
+        {% include directory.html %}
+        {% include links.html %}
+    </div>
 
     <main>
         {{ content }}

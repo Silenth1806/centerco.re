@@ -1,0 +1,10 @@
+<div class="project-cell">
+    <h1 class="project-title">{{include.title}}</h2>
+    <h2 class="project-subtitle">{{include.subtitle}}</h3>
+    <p class="project-text">{{include.text}}</p>
+    <div class="project-images">
+        {% for image in include.images %}
+            <img src="{{ image }}" alt="Project Image" class="project-image">
+        {% endfor %}
+    </div>
+</div>
